@@ -9,17 +9,12 @@ def findMedian(numberList):
         ++length
         length/=2
         --length
-        return(numberList[int(length)])
+        return(int(numberList[int(length)]))
     
     else:
         length/=2
-        return((numberList[int(length-1)]+numberList[int(length)])/2)
+        return(int((numberList[int(length-1)]+numberList[int(length)])/2))
         
-        
-    
-    
-
-
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -29,4 +24,5 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
+    
 print(numbers)
